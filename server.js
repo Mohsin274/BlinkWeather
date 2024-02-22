@@ -5,6 +5,7 @@ require('dotenv').config();
 const app = express()
 
 const apiKey = process.env.API_KEY;
+const port = process.env.PORT || 3000;
 
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -68,6 +69,6 @@ app.post('/', function (req, res) {
   });
 })
 
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!')
+app.listen(port, function () {
+  console.log(`listening on port ${port}!`)
 })
