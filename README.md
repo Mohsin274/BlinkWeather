@@ -1,6 +1,6 @@
 # BlinkWeather
 
-BlinkWeather is a simple weather application built with Node.js, using the OpenWeather API to provide real-time weather information. With BlinkWeather, you can quickly check the current weather conditions for any location around the world. See [demo](https://literate-half-rosemary.glitch.me/) here.
+BlinkWeather is a simple weather application built with Node.js, using the OpenWeather API to provide real-time weather information. With BlinkWeather, you can quickly check the current weather conditions for any location around the world. See [demo](https://blinkweather.glitch.me/) here.
 
 ## Features
 

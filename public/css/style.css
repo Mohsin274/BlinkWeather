@@ -223,6 +223,7 @@ button::-moz-focus-inner {
   width: 60px;
   display: inline-block;
   margin-right: 20px;
+  text-shadow: none;
   vertical-align: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
