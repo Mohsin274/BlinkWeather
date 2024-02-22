@@ -1,0 +1,66 @@
+.wi {
+    width: 5em;
+    height: 5em;
+    display: block;
+    background-size: 100%;
+    
+}
+
+.ic-200 {
+    background-image: url(icons/wi_light_rain_thunder.png);
+}
+
+.ic-201, .ic-202, .ic-210, .ic-211, .ic-212, .ic-221, .ic-230, .ic-231, .ic-232 {
+    background-image: url(icons/wi_rain_thunder_day.png);
+}
+
+.ic-300, .ic-301, .ic-302, .ic-310, .ic-311, .ic-312, .ic-313, .ic-314, .ic-321 {
+    background-image: url(icons/wi_rain.png);
+}
+
+.ic-500, .ic-501, .ic-502, .ic-504, .ic-511, .ic-320, .ic-521, .ic-522, .ic-531 {
+    background-image: url(icons/wi_rain.png);
+}
+
+.ic-600, .ic-601, .ic-602, .ic-611, .ic-612, .ic-615, .ic-616, .ic-620, .ic-622 {
+    background-image: url(icons/wi_snow.png);
+}
+
+.ic-701, .ic-711, .ic-721, .ic-731, .ic-741, .ic-751, .ic-761, .ic-762, .ic-771, .ic-781 {
+    background-image: url(icons/wi_smoke.png);
+}
+
+.ic-800 {
+    background-image: url(icons/wi_sun.png);
+}
+
+.ic-801, .ic-802, .ic-803, .ic-804 {
+    background-image: url(icons/wi_cloud.png);
+}
+
+.bg-200, .bg-201, .bg-202, .bg-210, .bg-211, .bg-212, .bg-221, .bg-230, .bg-231, .bg-232 {
+    background-image: url(https://images.unsplash.com/photo-1564343921421-e163972db735?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+}
+
+.bg-300, .bg-301, .bg-302, .bg-310, .bg-311, .bg-312, .bg-313, .bg-314, .bg-321 {
+    background-image: url(https://images.unsplash.com/photo-1536532184021-da5392b55da1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+}
+
+.bg-500, .bg-501, .bg-502, .bg-504, .bg-511, .bg-320, .bg-521, .bg-522, .bg-531 {
+    background-image: url(https://images.unsplash.com/photo-1486016006115-74a41448aea2?ixlib=rb-1.2.1&auto=format&fit=crop&w=747&q=80);
+}
+
+.bg-600, .bg-601, .bg-602, .bg-611, .bg-612, .bg-615, .bg-616, .bg-620, .bg-622 {
+    background-image: url(https://images.unsplash.com/photo-1453235421161-e41b42ebba05?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+}
+
+.bg-701, .bg-711, .bg-721, .bg-731, .bg-741, .bg-751, .bg-761, .bg-762, .bg-771, .bg-781 {
+    background-image: url(https://images.unsplash.com/photo-1528268711562-d7553222e12a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=981&q=80);
+}
+.bg-800{
+    background-image: url(https://images.unsplash.com/photo-1506588345361-5e12b7840845?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+}
+
+.bg-801, .bg-802, .bg-803, .bg-804 {
+    background-image: url(https://images.unsplash.com/photo-1564343921421-e163972db735?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+}

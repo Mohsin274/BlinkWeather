@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Weather in</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <script src='main.js'></script>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/icons.css">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="/css/images/blinkweatherlogo.png">
+        <nav class="nav">
+            <div id="mini-search">
+                <form action="/" method="POST">                       
+                    <div class="onoffswitch">
+                        <input type="checkbox" name="unit" value="metric" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                        <label class="onoffswitch-label" for="myonoffswitch">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                    </div>
+                    
+                    <input class="inp" id="main_search_input" name="city" type="text" placeholder="Enter city..." required><button class="btn" id="search_button">GO</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <% if(weather !== null){ %>
+        
+    <div class="main bg-<%=icon%>">
+        <div class="w-res grid-container">
+            <div class="res-grid1">
+                <i class= "wi ic-<%=icon%>"></i>
+                <p><i><b></b> Today</i></p>
+                <h3><%= city %><span class="country"><%= country %></span></h3>
+                <h1><%= weather %>&#176</h1>            
+                <h6><span class="high-temp">H <%= max %>&#176</span>&emsp;L <%= min %>&#176</h6>
+                <h6 class="w-info"><i><%= info %></i></h6>
+                <p><b>Feels Like</b>: <%= feels %>&#176</p>
+                <p><b>Wind</b>: <%= wind %> m/s</p>
+                <p><b>Sunrise</b>: <%= sunrise %></p>
+                <p><b>Sunset</b>: <%= sunset %></p>
+                <!-- <p>Precipitation: <%= city %></p> -->
+                <p><b>Humidity</b>: <%= humidity %></p>
+                <!-- <p><b>Dew point</b>: <%= dew %></p> -->
+                <p><b>Pressure</b>: <%= pressure %> hpa</p>
+                <p><b>Visibility</b>: <%= visibility %> KM</p>
+            </div>
+            <div class="res-grid2">           
+                <% } %>
+                <% if(error !== null){ %>
+                <p><%= error %></p>
+                <% } %>
+            </div>
+        </div>
+    </div>
+    <script>
+        var d = new Date();
+        var days = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]
+        var months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+        document.getElementsByTagName("B")[0].innerHTML = days[d.getDay()] + ", " + d.getDate() + " " + months[d.getMonth()];
+        
+        const savedUnit = localStorage.getItem('unit');
+        if (savedUnit) {
+            document.getElementById("myonoffswitch").checked = (savedUnit === 'metric');
+        }
+        document.getElementById("myonoffswitch").addEventListener("change", function() {
+            const unit = this.checked ? "metric" : "imperial";
+            localStorage.setItem('unit', unit);
+            document.querySelector('input[name="unit"]').value = unit;
+        });
+
+    </script>
+</body>
+</html>
